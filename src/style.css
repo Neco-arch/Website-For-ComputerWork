@@ -1,0 +1,80 @@
+ * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 20px;
+}
+
+nav {
+    background-color: #ffffff;
+    padding: 16px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    margin-bottom: 30px;
+}
+
+.Header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.Header h1 {
+    font-size: 28px;
+    color: #6cbd45;
+}
+
+.Header input[type="text"] {
+    padding: 10px 14px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    width: 250px;
+}
+
+.Header input[type="text"]:focus {
+    border-color: #6cbd45;
+    box-shadow: 0 0 0 3px rgba(108, 189, 69, 0.2);
+}
+
+h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.MainContent {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px 0;
+    min-height: 60vh;
+}
+
+.BoxWrapperContent {
+    width: 100%;
+    max-width: 1000px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    padding: 24px;
+}
+
+.MethodOrder {
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+    gap: 30px  ;
+}
+
