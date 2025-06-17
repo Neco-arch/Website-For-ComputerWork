@@ -1,30 +1,35 @@
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+
 body {
     height: 100vh;
     font-family: 'Roboto', sans-serif;
-    background-color: #f0f4f8;
-    color: #2c3e50;
+    background-color: #1e1e1e;  
+    color: #e0e0e0;             
     padding: 20px;
     line-height: 1.6;
 }
 
+
 nav {
-    background-color: #ffffff;
+    background-color: #2a2a2a;  
     padding: 18px 24px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
     border-radius: 12px;
     margin-bottom: 30px;
-    transition: box-shadow 0.3s ease;
+    transition: box-shadow 0.3s ease, background-color 0.3s ease;
 }
 
 nav:hover {
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.9);
+    background-color: #353535;
 }
+
 
 .Header {
     display: flex;
@@ -36,31 +41,47 @@ nav:hover {
 
 .Header h1 {
     font-size: 30px;
-    color: #6cbd45;
+    color: #81c784; 
     font-weight: 700;
 }
 
 .Header input[type="text"] {
     padding: 10px 16px;
     font-size: 16px;
-    border: 1px solid #ccd6dd;
+    border: 1px solid #4a4a4a;  
     border-radius: 10px;
-    background-color: #fff;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.03);
+    background-color: #333333;
+    color: #f0f0f0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
     outline: none;
-    transition: all 0.2s ease-in-out;
+    transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
     width: 280px;
 }
 
-.Header input[type="text"]:focus {
-    border-color: #6cbd45;
-    box-shadow: 0 0 0 4px rgba(108, 189, 69, 0.25);
+.Header input[type="text"]::placeholder {
+    color: #999999;
 }
+
+.Header input[type="text"]:focus {
+    border-color: #81c784;
+    box-shadow: 0 0 0 4px rgba(129, 199, 132, 0.4);
+    background-color: #2c2c2c;
+    color: #e0e0e0;
+}
+
 
 h1 {
     font-size: 32px;
     margin-bottom: 20px;
+    color: #c8e6c9;
 }
+
+h2 {
+    margin-top: 16px;
+    color: #a5d6a7;
+    font-size: 22px;
+}
+
 
 .MainContent {
     display: flex;
@@ -68,34 +89,32 @@ h1 {
     align-items: flex-start;
     padding: 40px 0;
     min-height: 60vh;
-    background-color: #ffffff;
+    margin-top: 25px;
+    background-color: #292929;
     border-radius: 12px;
-    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.9);
 }
+
 
 .BoxWrapperContent {
     width: 100%;
     max-width: 1000px;
-    background-color: #fff;
-    border: 1px solid #e0e6ed;
+    background-color: #222222;
+    border: 1px solid #444444;
     border-radius: 12px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
     padding: 32px;
-    transition: box-shadow 0.3s ease;
+    transition: box-shadow 0.3s ease, background-color 0.3s ease;
 }
 
 .BoxWrapperContent:hover {
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.07);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.95);
+    background-color: #2d2d2d;
 }
+
 
 .CleanFoodExample {
     margin-left: 15px;
-}
-
-h2 {
-    margin-top: 16px;
-    color: #34495e;
-    font-size: 22px;
 }
 
 .PatternofCleanFood {
@@ -105,30 +124,71 @@ h2 {
     margin-top: 16px;
 }
 
+
 .SaladPicture {
     width: 100%;
     max-width: 500px;
     border-radius: 10px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
-    transition: transform 0.3s ease;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.7);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .SaladPicture:hover {
     transform: scale(1.02);
+    box-shadow: 0 6px 12px rgba(129, 199, 132, 0.7);
 }
 
 .ImageWrapper {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin: 20px 0;
 }
 
 .CleanFoodCombination {
     margin-left: 10px;
 }
 
-.How-To-Section {
+.How-To {
     margin-left: 10px;
+    font-size: 17px;
+}
+
+
+a {
+    color: #81c784;
+    text-decoration: none;
+    transition: color 0.2s ease;
+    cursor: pointer;
+}
+
+a:hover,
+a:focus {
+    text-decoration: underline;
+    color: #a5d6a7;
+    outline: none;
+}
+
+
+input:focus,
+button:focus,
+a:focus {
+    outline: 2px solid #81c784;
+    outline-offset: 2px;
+}
+
+h3 {
+    margin-top: 16px;
+    color: #a5d6a7;
+    font-size: 18px;
+    list-style: none;
+}
+
+li > h3 {
+    list-style: none;
+}
+
+.Hello {
+    padding-left: 10px;
+    font-size: 17px;
 }
